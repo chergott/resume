@@ -1,10 +1,10 @@
-// Builds dist/resume.pdf from resume.md and resume.css.
+// Builds dist/resume.pdf (and copies resume.md next to it) from resume.md and resume.css.
 //
 // The Markdown becomes HTML (raw HTML in it is kept), the CSS styles it, and headless Chrome
 // prints it. If the resume runs past one page, it is scaled down a little at a time until it
 // fits. Chrome is found from CHROME_PATH, or in the usual install locations.
 import { spawnSync } from "node:child_process";
-import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { copyFileSync, existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
@@ -33,6 +33,8 @@ const css = readFileSync(join(root, "resume.css"), "utf8");
 
 const work = mkdtempSync(join(tmpdir(), "resume-"));
 mkdirSync(outDir, { recursive: true });
+// The source goes in the package too, for job-hunter to read.
+copyFileSync(join(root, "resume.md"), join(outDir, "resume.md"));
 
 try {
   // Zoom 1 down to 0.8: the largest size that fits on one page.

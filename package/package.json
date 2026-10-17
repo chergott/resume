@@ -1,7 +1,7 @@
 {
   "name": "@chergott/resume",
   "version": "0.0.0",
-  "description": "Connor Hergott's resume as a one-page PDF, for chergott-site to serve.",
+  "description": "Connor Hergott's resume as a one-page PDF and Markdown, for chergott-site and job-hunter to use.",
   "files": [
     "dist"
   ],

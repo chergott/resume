@@ -1,139 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Raleway:wght@300;600;700&display=swap');
+
 @page {
   size: letter;
-  margin: 0.5in 0.6in;
-}
-
-:root {
-  --vscode-editor-background: #525659 !important;
-  --vscode-markdown-preview-background: #525659 !important;
+  margin: 0.38in 0.55in;
 }
 
 body {
-  background-color: #ffffff !important;
-  color: #1e293b !important;
-  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
-  font-size: 9.5pt !important;
-  line-height: 1.45 !important;
-  max-width: 8.5in !important;
-  min-height: 11in !important;
-  margin: 1.5rem auto !important;
-  padding: 0.5in 0.6in !important;
-  box-sizing: border-box !important;
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.45) !important;
+  background-color: #ffffff;
+  color: #1e293b;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 9.25pt;
+  line-height: 1.38;
+  max-width: 8.5in;
+  min-height: 11in;
+  margin: 1.5rem auto;
+  padding: 0.38in 0.55in;
+  box-sizing: border-box;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.45);
 }
 
 /* ==========================================================================
    Header & Sub-header
    ========================================================================== */
 h1 {
-  font-family: 'Raleway', sans-serif !important;
-  font-size: 25pt !important;
-  font-weight: 300 !important;
-  letter-spacing: 0.5px !important;
-  color: #0f172a !important;
-  text-align: center !important;
-  margin: 0 0 4px 0 !important;
-  padding: 0 !important;
-  border: none !important;
-  display: block !important;
-  width: 100% !important;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24pt;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  color: #0f172a;
+  text-align: center;
+  margin: 0 0 2px 0;
+  padding: 0;
+  border: none;
+  display: block;
+  width: 100%;
 }
 
-.sub-header {
-  font-family: 'Raleway', sans-serif !important;
-  text-align: center !important;
-  font-size: 11pt !important;
-  color: #475569 !important;
-  margin-bottom: 12px !important;
+.header-subtitle {
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  font-size: 10pt;
+  font-weight: 500;
+  color: #334155;
+  margin-bottom: 2px;
 }
 
-.sub-header .contact-line {
-  font-size: 9pt !important;
-  color: #64748b !important;
-  margin-top: 3px !important;
+.header-contact {
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  font-size: 8.75pt;
+  color: #64748b;
+  margin-bottom: 10px;
 }
 
-.summary {
-  text-align: justify !important;
-  margin-bottom: 12px !important;
-  color: #1e293b !important;
+.header-contact a {
+  color: #2563eb;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.header-contact a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   Horizontal Dividers
+   ========================================================================== */
+hr {
+  border: none;
+  border-top: 1px solid #94a3b8;
+  margin: 10px 0;
 }
 
 /* ==========================================================================
    Section Headings (h2)
    ========================================================================== */
-.vscode-body h2,
 h2 {
-  font-family: 'Raleway', sans-serif !important;
-  /* font-size: 11.5pt !important; */
-  font-weight: 600 !important;
-  letter-spacing: 0.5px !important;
-  color: #2b6cb0 !important;
-  border-bottom: 1px solid #cbd5e1 !important;
-  padding-bottom: 2px !important;
-  margin: 14px 0 6px 0 !important;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12.5pt;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #101211;
+  border: none; /* Reset any default browser/webview borders */
+  border-bottom: 1px solid #94a3b8;
+  padding-bottom: 2px;
+  margin-top: 8px;
+  margin-bottom: 3px;
 }
 
 /* ==========================================================================
-   Experience Headings & Dates (h3)
+   Company, School, & Date Headers (h3)
    ========================================================================== */
-.vscode-body h3,
 h3 {
-  font-family: 'Raleway', sans-serif !important;
-  font-size: 10pt !important;
-  font-weight: 700 !important;
-  color: #1e3a8a !important;
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: baseline !important;
-  margin: 10px 0 2px 0 !important;
-  padding: 0 !important;
+  font-family: 'Raleway', sans-serif;
+  font-size: 10.5pt;
+  font-weight: 700;
+  color: #0f172a;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 7px 0 1px 0;
+  padding: 0;
 }
 
 .job-title {
-  font-size: 9pt !important;
-  font-style: italic !important;
-  color: #475569 !important;
-  margin-bottom: 4px !important;
+  font-size: 8.75pt;
+  font-style: italic;
+  color: #475569;
+  margin-bottom: 3px;
 }
 
 .date {
-  font-weight: normal !important;
-  color: #64748b !important;
-  font-size: 9pt !important;
-  white-space: nowrap !important;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #475569;
+  font-size: 8.5pt;
+  white-space: nowrap;
 }
 
 /* ==========================================================================
    Lists & Bullets
    ========================================================================== */
-.vscode-body ul,
 ul {
-  padding-left: 20px !important;
-  margin: 0 0 8px 0 !important;
-  list-style-type: disc !important;
+  padding-left: 18px;
+  margin: 0 0 4px 0;
+  list-style-type: disc;
 }
 
-.vscode-body li,
 li {
-  margin-bottom: 3px !important;
-  color: #1e293b !important;
+  margin-bottom: 2.5px;
+  color: #1e293b;
 }
 
-a {
-  color: #2563eb !important;
-  text-decoration: none !important;
+strong {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* ==========================================================================
+   Projects Section
+   ========================================================================== */
+.project-entry {
+  margin-bottom: 7px;
+}
+
+.project-title-row {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-bottom: 1px;
+}
+
+.project-link {
+  font-family: 'Raleway', sans-serif;
+  font-size: 10pt;
+  font-weight: 700;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+.project-tag {
+  font-family: 'Inter', sans-serif;
+  font-size: 8.5pt;
+  color: #64748b;
+  font-weight: 400;
+}
+
+.project-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 9pt;
+  color: #1e293b;
+  line-height: 1.35;
 }
 
 /* ==========================================================================
    Print Overrides
    ========================================================================== */
 @media print {
-  body, .vscode-body {
-    max-width: 100% !important;
-    min-height: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    box-shadow: none !important;
+  body {
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
   }
 }

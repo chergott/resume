@@ -1,6 +1,7 @@
 # @chergott/resume
 
-`dist/resume.pdf` is the resume built from `resume.md` and `resume.css` (`npm run build`).
+`dist/resume.pdf` is the resume built from `resume.md` and `resume.css` (`npm run build`),
+and `dist/resume.md` is the Markdown source, which job-hunter reads.
 
 The `Resume package` workflow (`.github/workflows/package.yml`) builds and publishes a new
 version to GitHub Packages on each push to `main` that changes the resume, versioned
