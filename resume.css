@@ -1,0 +1,139 @@
+@page {
+  size: letter;
+  margin: 0.5in 0.6in;
+}
+
+:root {
+  --vscode-editor-background: #525659 !important;
+  --vscode-markdown-preview-background: #525659 !important;
+}
+
+body {
+  background-color: #ffffff !important;
+  color: #1e293b !important;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  font-size: 9.5pt !important;
+  line-height: 1.45 !important;
+  max-width: 8.5in !important;
+  min-height: 11in !important;
+  margin: 1.5rem auto !important;
+  padding: 0.5in 0.6in !important;
+  box-sizing: border-box !important;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.45) !important;
+}
+
+/* ==========================================================================
+   Header & Sub-header
+   ========================================================================== */
+h1 {
+  font-family: 'Raleway', sans-serif !important;
+  font-size: 25pt !important;
+  font-weight: 300 !important;
+  letter-spacing: 0.5px !important;
+  color: #0f172a !important;
+  text-align: center !important;
+  margin: 0 0 4px 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  display: block !important;
+  width: 100% !important;
+}
+
+.sub-header {
+  font-family: 'Raleway', sans-serif !important;
+  text-align: center !important;
+  font-size: 11pt !important;
+  color: #475569 !important;
+  margin-bottom: 12px !important;
+}
+
+.sub-header .contact-line {
+  font-size: 9pt !important;
+  color: #64748b !important;
+  margin-top: 3px !important;
+}
+
+.summary {
+  text-align: justify !important;
+  margin-bottom: 12px !important;
+  color: #1e293b !important;
+}
+
+/* ==========================================================================
+   Section Headings (h2)
+   ========================================================================== */
+.vscode-body h2,
+h2 {
+  font-family: 'Raleway', sans-serif !important;
+  /* font-size: 11.5pt !important; */
+  font-weight: 600 !important;
+  letter-spacing: 0.5px !important;
+  color: #2b6cb0 !important;
+  border-bottom: 1px solid #cbd5e1 !important;
+  padding-bottom: 2px !important;
+  margin: 14px 0 6px 0 !important;
+}
+
+/* ==========================================================================
+   Experience Headings & Dates (h3)
+   ========================================================================== */
+.vscode-body h3,
+h3 {
+  font-family: 'Raleway', sans-serif !important;
+  font-size: 10pt !important;
+  font-weight: 700 !important;
+  color: #1e3a8a !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: baseline !important;
+  margin: 10px 0 2px 0 !important;
+  padding: 0 !important;
+}
+
+.job-title {
+  font-size: 9pt !important;
+  font-style: italic !important;
+  color: #475569 !important;
+  margin-bottom: 4px !important;
+}
+
+.date {
+  font-weight: normal !important;
+  color: #64748b !important;
+  font-size: 9pt !important;
+  white-space: nowrap !important;
+}
+
+/* ==========================================================================
+   Lists & Bullets
+   ========================================================================== */
+.vscode-body ul,
+ul {
+  padding-left: 20px !important;
+  margin: 0 0 8px 0 !important;
+  list-style-type: disc !important;
+}
+
+.vscode-body li,
+li {
+  margin-bottom: 3px !important;
+  color: #1e293b !important;
+}
+
+a {
+  color: #2563eb !important;
+  text-decoration: none !important;
+}
+
+/* ==========================================================================
+   Print Overrides
+   ========================================================================== */
+@media print {
+  body, .vscode-body {
+    max-width: 100% !important;
+    min-height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+  }
+}

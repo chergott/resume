@@ -1,0 +1,13 @@
+{
+  "name": "resume",
+  "private": true,
+  "version": "0.0.0",
+  "description": "My resume as Markdown and CSS, built to a one-page PDF.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-pdf.mjs"
+  },
+  "devDependencies": {
+    "micromark": "^4.0.2"
+  }
+}
