@@ -48,7 +48,7 @@ Senior Software Engineer with 9+ years building complex React / TypeScript appli
     <span class="project-tag">(plant-care app)</span>
   </div>
   <div class="project-desc">
-    Plant-care dashboard on Cloudflare Workers and D1 (React, TypeScript, Radix) that tracks watering, feeding, and light by season alongside live local weather, with Claude-assisted care guidance.
+    Plant-care app (Cloudflare Workers, D1, React, TypeScript) that classifies the local climate from 15 years of weather data, sets seasonal watering, feeding, and light for ~160 plants by care group, and alerts on frost and rain; Claude researches plant values and cites its sources.
   </div>
 </div>
 
@@ -58,7 +58,7 @@ Senior Software Engineer with 9+ years building complex React / TypeScript appli
     <span class="project-tag">(agentic job search platform)</span>
   </div>
   <div class="project-desc">
-    Python MCP server exposing job search, listing evaluation, and lead-saving tools to agents in Claude Desktop, Claude Code, and Cursor, paired with a React/TypeScript app that drives Claude Code headlessly to score fit and draft cover letters and answers for human review. Pluggable job-source adapters, SQLite persistence, uv monorepo with a pytest suite.
+    MCP server and web app that searches 9+ job sources, scores listings against my profile (keyword rules plus Claude-assessed fit), and tracks applications. Python MCP tools work with any MCP-compatible agent, including Claude Code; a React/TypeScript app drives Claude Code headlessly to draft cover letters and answers for human review. SQLite persistence, uv monorepo with a pytest suite.
   </div>
 </div>
 
