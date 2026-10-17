@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Raleway:wght@300;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Raleway:wght@300;600;700&display=swap");
 
 @page {
   size: letter;
@@ -8,7 +8,12 @@
 body {
   background-color: #ffffff;
   color: #1e293b;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 9.25pt;
   line-height: 1.38;
   max-width: 8.5in;
@@ -23,7 +28,7 @@ body {
    Header & Sub-header
    ========================================================================== */
 h1 {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 24pt;
   font-weight: 300;
   letter-spacing: 0.5px;
@@ -37,7 +42,7 @@ h1 {
 }
 
 .header-subtitle {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   text-align: center;
   font-size: 10pt;
   font-weight: 500;
@@ -46,7 +51,7 @@ h1 {
 }
 
 .header-contact {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   text-align: center;
   font-size: 8.75pt;
   color: #64748b;
@@ -76,7 +81,7 @@ hr {
    Section Headings (h2)
    ========================================================================== */
 h2 {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 12.5pt;
   font-weight: 600;
   letter-spacing: 0.5px;
@@ -92,7 +97,7 @@ h2 {
    Company, School, & Date Headers (h3)
    ========================================================================== */
 h3 {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 10.5pt;
   font-weight: 700;
   color: #0f172a;
@@ -111,7 +116,7 @@ h3 {
 }
 
 .date {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   color: #475569;
   font-size: 8.5pt;
@@ -152,7 +157,7 @@ strong {
 }
 
 .project-link {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 10pt;
   font-weight: 700;
   color: #2563eb;
@@ -164,14 +169,14 @@ strong {
 }
 
 .project-tag {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 8.5pt;
   color: #64748b;
   font-weight: 400;
 }
 
 .project-desc {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 9pt;
   color: #1e293b;
   line-height: 1.35;

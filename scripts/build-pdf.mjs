@@ -4,7 +4,15 @@
 // prints it. If the resume runs past one page, it is scaled down a little at a time until it
 // fits. Chrome is found from CHROME_PATH, or in the usual install locations.
 import { spawnSync } from "node:child_process";
-import { copyFileSync, existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import {
+  copyFileSync,
+  existsSync,
+  mkdirSync,
+  mkdtempSync,
+  readFileSync,
+  rmSync,
+  writeFileSync,
+} from "node:fs";
 import { tmpdir } from "node:os";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
@@ -57,7 +65,10 @@ try {
       { stdio: "ignore" },
     );
     if (!existsSync(out)) throw new Error("Chrome didn't write a PDF.");
-    const pages = readFileSync(out).toString("latin1").match(/\/Type\s*\/Page[^s]/g)?.length ?? 0;
+    const pages =
+      readFileSync(out)
+        .toString("latin1")
+        .match(/\/Type\s*\/Page[^s]/g)?.length ?? 0;
     if (pages <= 1) {
       console.log(`[resume] built dist/resume.pdf (1 page, zoom ${zoom})`);
       process.exit(0);

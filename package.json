@@ -8,6 +8,7 @@
     "build": "node scripts/build-pdf.mjs"
   },
   "devDependencies": {
-    "micromark": "^4.0.2"
+    "micromark": "^4.0.2",
+    "prettier": "^3.9.10"
   }
 }
