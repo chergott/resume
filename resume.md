@@ -66,4 +66,4 @@ Senior Software Engineer with 9+ years building complex React / TypeScript appli
 
 ### San José State University <span class="date">Aug 2011 – Dec 2015</span>
 
-<div class="job-title">B.S. Computer Science, Mathematics Minor</div>
+<div class="job-title">Bachelor of Science (B.S.) in Computer Science, Minor in Mathematics</div>
