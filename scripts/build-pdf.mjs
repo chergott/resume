@@ -1,5 +1,5 @@
 // Builds dist/resume.pdf (and copies resume.md next to it) from resume.md and resume.css.
-// It also builds dist/resume-public.pdf, the same resume without the email address, for
+// It also builds dist/resume-public.pdf, the same resume without the email address or phone number, for
 // putting on a website where bots scrape it.
 //
 // The Markdown becomes HTML (raw HTML in it is kept), the CSS styles it, and headless Chrome
@@ -23,11 +23,13 @@ import { micromark } from "micromark";
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const outDir = join(root, "dist");
 const source = readFileSync(join(root, "resume.md"), "utf8");
-// The email and the bullet before it, whether plain text or a mailto link.
-const emailPattern = /\s*&bull;\s*(?:<a [^>]*mailto:[^>]*>[^<]*<\/a>|[\w.+-]+@[\w.-]+\.\w+)/g;
+// The email and phone number, each with the bullet before it. The email may be plain text or a
+// mailto link.
+const contactPattern =
+  /\s*&bull;\s*(?:<a [^>]*mailto:[^>]*>[^<]*<\/a>|[\w.+-]+@[\w.-]+\.\w+|\(?\d{3}\)?[ .-]?\d{3}[ .-]?\d{4})/g;
 const variants = [
   { name: "resume.pdf", markdown: source },
-  { name: "resume-public.pdf", markdown: source.replace(emailPattern, "") },
+  { name: "resume-public.pdf", markdown: source.replace(contactPattern, "") },
 ];
 
 const chromeCandidates = [

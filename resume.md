@@ -4,7 +4,7 @@
 Senior Software Engineer | Frontend & Agentic Systems
 </div>
 <div class="header-contact">
-Thousand Oaks, CA &bull; connorhergott@gmail.com &bull; <a href="https://chergott.com">CHergott.com</a> &bull; <a href="https://linkedin.com/in/connorhergott">LinkedIn</a>
+Thousand Oaks, CA &bull; connorhergott@gmail.com &bull; (805) 279-2303 &bull; <a href="https://chergott.com">CHergott.com</a> &bull; <a href="https://linkedin.com/in/connorhergott">LinkedIn</a>
 </div>
 
 ---
